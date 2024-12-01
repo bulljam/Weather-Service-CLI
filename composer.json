@@ -1,0 +1,26 @@
+{
+    "name": "aymane/weather-cli",
+    "version": "1.0.0",
+    "require": {
+        "guzzlehttp/guzzle": "^7.10",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aymane\\WeatherCli\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aymane Bouljam"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
