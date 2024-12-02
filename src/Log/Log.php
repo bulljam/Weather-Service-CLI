@@ -20,8 +20,7 @@ class Log
                 'message' => 'Unknown error'
             ];
 
-            error_log("Code: {$code}, City: {$city}, Message: [{$message}]");
-            echo  $code === WeatherServiceException::CODE_RUNTIME ? "Fetching weather failed for City: {$city}, verify the name and try again." : "Something went wrong.";
+            error_log("Code: {$code}, City: {$city}, Message: [ {$message} ]");
         } else {
             error_log($error);
         }
