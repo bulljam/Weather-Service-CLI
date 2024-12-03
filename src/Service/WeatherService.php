@@ -37,8 +37,8 @@ class WeatherService
             if (
                 $weatherData === null ||
                 !isset(
-                    $weatherData['main']['temp'], 
-                    $weatherData['main']['humidity'], 
+                    $weatherData['main']['temp'],
+                    $weatherData['main']['humidity'],
                     $weatherData['weather'][0]['description']
                 )
             ) {
@@ -59,5 +59,10 @@ class WeatherService
 
             throw new WeatherServiceException("Something went wrong, {$e->getMessage()}", $city, WeatherServiceException::CODE_GENERAL, $e);
         }
+    }
+
+    public function setClient(Client $client): void
+    {
+        $this->client = $client;
     }
 }
