@@ -29,7 +29,7 @@ it('returns weather data', function () {
     expect($weather['description'])->toBe('clear sky');
 });
 
-it('throws an WeatherServiceException exception on invalid API response', function () {
+it('throws WeatherServiceException exception on invalid API response', function () {
     $mockClient = $this->createMock(Client::class);
     $mockClient->method('get')->willReturn(
         new Response(
