@@ -85,8 +85,6 @@ Unit tests cover:
 
 * Valid API responses
 * Invalid API responses
-* Guzzle exceptions
-* General exceptions
 
 ## Project Structure
 
